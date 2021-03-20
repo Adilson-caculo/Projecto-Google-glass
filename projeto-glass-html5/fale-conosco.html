@@ -1,0 +1,101 @@
+<html lang="pt-br">
+    <head>
+        <title>tudo sobre o google glass</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="_css/form.css">
+        
+      
+             <script type="text/javascript"src="_javascript/funcoes.js" >
+            
+     </script>  
+     <script type="text/javascript">
+         function calc_tota() {
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;
+         }
+     </script>
+    </head>
+    <body>
+        <div id= "interface">
+            <header id="cabecalho">
+            <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+            </hgroup> 
+        <nav id="Menu">
+
+            <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+            <ul type="square">
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html"> Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html" >especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html" title="ver todas fotos " >Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html" title="multimidia" > Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+        </ul>
+    </nav>
+            </header>
+    <section id="corpo-full ">
+    <article id="noticia-principal">
+        <header id="cabecalho_artigo">
+            <hgroup>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contatos </h1>
+                <h2>por Adilson Caculo</h2>
+                <h3>Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        </header>
+    </article>
+</section>
+[AQUI ENTRA UMA FOTO]
+<form method="post" id="fContacto" action="mailto:adilsoncaculosuares@gmail.com" oninput="calc_total()">
+<fieldset id="usuario"> <legend>Identificação do Usuário</legend> 
+    <p><label for="cNome">Nome: </label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></p>
+   <p><label for="cSenha">Senha</label>: <input type="password" name="tSenha" id="cSenha" maxlength="8" placeholder="8 digitos"></p>
+    <p><label for="cMail">E-mail:</label><input type="imail" name="tMail" id="cMail" size="20" maxlength="40"></p>
+    <fieldset id="sexo"><legend>sexo</legend>
+        <input type="radio" name="sexo" id="tMacs " checked> <label for="tMacs">Masculino</label><br> 
+         <input type="radio" name="sexo" id="Tfem"> <label for="Tfem">Feminino</label> 
+   <p> <label for="cDate">Data de Nascimento:</label><input type="date" name="cDate"></p></fieldset>
+</fieldset>
+<fieldset id="endereco"><legend>Endereço do Usuário</legend> 
+   <p><label for="cRua"> Logradouro:</label><input type="text" name="cRua" size="13" maxlegth="80" placeholder="Rua,Av,trav..."></p>
+   <p> <label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="999999"></p>
+    <p><label for="cEst">Estado:</label>
+        <select name="tEst" id="cEst">
+            <option selected value="LD">Luanda</option>
+            <option value="BG">benguela</option>
+            <option value="HB">Huambo</option>
+            <option LB>Lubando</option></p>
+        </select>
+   
+   <p> <label for="cCid">Cidade</label> <input type="text" name="tCid" id="cCide" maxlength="40" size="20" placeholder="Sua cidade" list="cidades" ></p>
+    <datalist id="cidades">
+        <option value="Talatona"></option>
+        <option value="kilamba"></option>
+    </datalist>
+        </fieldset>
+<fieldset id="mensagem">
+   <legend>Mensagem do Usuário</legend> 
+        <p><label for="cUrg">Grau de Urgência:</label> <input type="range" name="cUrg" max="10" min="2" step="2" size="30"></p>
+        <label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="5" placeholder="Deixe aqui a sua mensagem"></textarea></p>
+</fieldset>
+<fieldset id="pedido">
+<legend>Quero um Google Glass</legend>
+  <p> <input type="checkbox" name="tPed" id="cPed" checked><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label> </p>
+ <p> <label for="cCor"> Cor:<input type="color" name="eCor" id="cCor" value="#0000ff"></label></p>
+ <p><label for="cQtd">Quantidade:<input type="number" name="tQtd" id="cQtd" max="5" min="0" value="0"></label> </p>
+ <p><label for="cTot">Preço Total: USD<input type="text" name="tTot" id="cTot" readonly> </label> </p>
+</ieldset>
+ 
+<input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
+</form>
+
+ <footer id="rodape">
+ Copyright &copy; 2020 - by Adilson Caculo<br>
+<a href="htto://facebook.com/Adilson Morais Caculo">Facebook</a> | <a href="http://Twitter.com ">Twitter</a>
+    </footer>
+            </div>
+    </body>
+</html>
